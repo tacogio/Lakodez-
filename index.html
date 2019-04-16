@@ -1,0 +1,290 @@
+<html lang="pl"><head>
+  <title>LAKODEZ</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="sct icon" type="image/png" href="img/favicon.png"></link>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif|Catamaran|Satisfy">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <meta name="keywords" content="Nefer Labrada Suárez, TIC 2018-2019, TICS, Eduardo Blanco Amor">
+  <meta name="description" content="¡Buenas! Esta es mi página web. ¡Aquí encontraras información sobre CSS y JAVAscript">
+  <link rel="stylesheet" href="css/index.css" type="text/css"></link>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="api.js"></script>
+  <script src="active.js"></script>
+
+<body>
+
+            <!--Botón-->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-arrow-up"></i> Ir arriba</button>
+
+            <!--Portada-->
+
+<header style="min-height: 45.2em;">
+				<div class="logo" >
+          <h1 class="port1" data-aos="zoom-in" data-aos-duration="1000" >LA<span style="color:#3678ea">KODE</span>Z</h1>
+            <img src="img/2.png" alt="logo" class="logoimg" data-aos="zoom-in" data-aos-duration="1000">
+        </div>
+
+
+</header>
+
+            <!--Flechas-->
+<div class="arrows bounce" >
+  <a href="#c1" style="color:#f0f0f0">
+<i class="fa fa-angle-double-down"></i>
+  </a>
+</div>
+
+
+            <!--Cuerpo 1-->
+  <section class="c1" id="c1">
+    <h1 style="color:#20d147;">Introducción</h1>
+    <div class="cms scrollme animateme" data-when="span" data-from="0.5" data-to="0" data-crop="false" data-translatex="-400" style="opacity: 1; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);" id="intro">
+    <h2><i class="fa fa-address-card" aria-hidden="true"></i>   ¿Quién soy yo?</h2>
+    <p>¡Buenas! Soy Nefer Labrada, un alumno de la asignatura de TICS 2018/2019 y esta página es mi proyecto.
+        Si estás aquí es porque deseas saber los pequeños trucos que se pueden
+        usar para que nuestras páginas no sean tan crudas. ¡Vamos a animar un
+        poco y <span class="color">entender qué es CSS y Javascrpit!</span><br><br>
+  A lo largo de esta página, veremos distintas maneras en las cuales puedes
+  crear una página interactiva y animada. Concretamente, aprenderemos sobre
+  el uso de <span style="color:#b91dbd">Animaciones CSS y Animaciones JS.</span></p>
+  </div>
+
+    <div class="cms scrollme animateme" data-when="span" data-from="0.5" data-to="0" data-crop="false" data-translatex="400" style="opacity: 1; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+    <h2></h2><h2><i class="fa fa-copy" aria-hidden="true"></i> Advertencia</h2>
+    <p><span style="color:#d51549">Se recomienda que antes de acceder a la información de esta página, que se
+      haya acabado el curso online ( p.e Khan Academy ) sobre HTML, CSS y JAVAscript </span>
+      para poder entender las explicaciones y sacar conclusiones de los ejemplos.
+      Esto no es un tutorial creado por un experto en la materia ni por alguien
+      licenciado, sino por alguien que entiende un mínimo de diseño y de código.
+      <br>
+      Acabado el aviso, veremos un ejemplo de las animaciones de css. ¡Desliza para
+      abajo para acceder a la siguiente sección!
+    </p>
+  </div>
+  </section>
+
+              <!--Cuerpo 2: CSS-->
+
+  <section class="portfolio" id="portfolio">
+    <h1 style="border: 0; margin-top: 0; color: #4420bd">CSS y sus animaciones</h1>
+    <p>Como has podido comprobar en esta página, CSS PUEDE animar. No es un trabajo
+    exclusivo para JAVAscript. Pero... ¿Cómo animamos con CSS? Seguro es algo muy complicado.<br>
+    Nada más alejado de la realidad. CSS se ha caracterizado siempre por su simplicidad. <br>
+    En este apartado, te enseñaré a utilizar los <span style="color:#9f1091">@keyframes.</span><br><br>
+    Los <span style="color:#9f1091">@keyframes</span> se encargan de trasladar un objeto de un <span style="color:#c98715">style</span> a otro. Por lo tanto,
+    tenemos que especificar de qué a qué estado queremos ir. Esto se puede hacer
+    con palabras o con %. Un ejemplo sería:</p>
+    <div class="ejcss animateme scrollme" data-when="span" data-from="0.5" data-to="0" data-crop="false" data-translatex="-400" style="opacity: 1; transform: translate3d(-140px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+    <p class="ej1">
+          <span style="color:#9f1091">@keyframes</span> <span style="color:#c98715">example</span> <br>
+      <span style="background-color:#6f6f6f">from</span> {<br>
+        color: red;<br>
+      }<br>
+      <span style="background-color:#6f6f6f">to</span> {<br>
+        color: yellow;<br>
+        }<br>
+      }<br>
+      </p>
+
+    </div>
+    <p>Entender esto es fundamental para comprender las animaciones. <br>
+      Ahora bien, a estas animaciones les podemos aplicar un delay, un nombre,
+      una duración... Esto se hace con el comando <span style="color:#2394dd">animation</span>. ¡Pongamos un ejemplo
+      de un cuadrado que cambia de color infinitamente!
+    </p>
+    <div class="ejcss animateme scrollme" data-when="span" data-from="0.5" data-to="0" data-crop="false" data-translatex="400" style="opacity: 1; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+    <p class="ej1">
+      <span style="color:#c98715">div</span> { <br>
+          width: 100px;<br>
+          height: 100px;<br>
+          background-color: red;<br>
+          position: relative;<br>
+          <span style="color:#2394dd">-webkit-animation-name:</span> example;<br>
+          <span style="color:#2394dd">-webkit-animation-duration:</span> 4s; <br>
+          <span style="color:#2394dd">-webkit-animation-iteration-count:</span> infinite; <br>
+          <span style="color:#2394dd">animation-name:</span> example;<br>
+          <span style="color:#2394dd">animation-duration:</span> 4s;<br>
+          <span style="color:#2394dd">animation-iteration-count:</span> infinite;<br>
+      }<br>
+      <span style="color:#9f1091">@keyframes</span> <span style="color:#c98715">example</span> <br>
+      0%   {background-color:red;} <br>
+      25%  {background-color:yellow;} <br>
+      50%  {background-color:blue;} <br>
+      75%  {background-color:green;} <br>
+      100% {background-color:red;} <br>
+  }<br>
+
+</p>
+    </div>
+      <p>Si has seguido los pasos a la perfección, el resultado será algo así:
+      </p>
+      <div class="rct"></div>
+      <p>¿Lo conseguiste? ¡Enhorabuena! Has aprendido a cómo animar con CSS. No fue
+      difícil, ¿verdad?. <br>
+      Con CSS se pueden hacer animaciones muy chulas para nuestras páginas web. Lamentablemente,
+      CSS no cuenta con la suficiente capacidad de animación como lo tiene JS. <br>
+      ¡Pero no te desanimes! Ahora aprenderás a sacarle partido a tus animaciones con JS.
+      <span style="color:#bf1616">"En la unión, está la fuerza". <span>
+      </p>
+
+                <!--Cuerpo 2: JS-->
+
+    <h1 style="border: 0; margin-top: 0; color: #4420bd">El poder oculto de JAVAscript</h1>
+    <p>JAVAscript tiene fama por su dificultad. Mucho se habla de que "es un lenguaje muy
+      complicado" o incluso de que "los hay mejores." Yo no vengo a venderte la moto:
+    JAVAscript es un lenguaje complicado y se requieren horas de aprendizaje para entenderlo.
+     Pero... ¿quién dijo que teníamos que hacer nosotros el trabajo sucio? <br>
+    Ninguna de las animaciones de esta página fueron creadas por mí. Son sacadas de la comunidad
+    de creadores en Github. <br>
+    Podemos, a partir de ellas, entender lo que sucede en nuestras páginas. Si no, podemos dejar
+    que la magia fluya y ver como nuestras páginas se convierten en obras de arte sin saber por qué.<br>
+    En este apartado, te explicaré cómo incrustar JAVAscript en nuestras páginas web.<br>
+  </p>
+
+  <div class="ejcss animateme scrollme" data-when="span" data-from="0.5" data-to="0" data-crop="false" data-translatex="-400" style="opacity: 1; transform: translate3d(-140px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+  <p class="ej2">
+    Para comenzar un script de JS, debemos poner tanto de dónde procede como también
+    cuándo comenzará. Esto se hace en distintos lugares dentro de nuestro código.
+  </p>
+  </div>
+  Primero, debemos especificar de dónde viene el script. Normalmente en Github
+  encontrarás links de descarga, para que los guardes en tu directorio u optes por la salida
+  fácil: copiar y pegar el link.<br>
+  <span style="color:#bf1616">En el apartado <<span>head</span>> de nuestra página, introducimos lo siguiente:</span>
+  <div class="ejcss animateme scrollme" data-when="span" data-from="0.5" data-to="0" data-crop="false" data-translatex="400" style="opacity: 1; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+  <p class="ej2" style="text-align:center">
+    <<span style="color:#bf1616">link</span> href="aquítulink.com"> <<span style="color:#bf1616">/link></span><br>
+    <<span style="color:#bf1616">link</span> href="/aquitudirectorio.js"> <<span style="color:#bf1616">/link</span>>
+  </p>
+  </div>
+  Ahora, es recomendable que al final de nuestra página (justo encima de la etiqueta de <<span>body</span>>)
+  creemos un apartado para los scripts. <br>
+  Para iniciar un script existen diversas maneras. En las páginas donde los saques seguramente
+  te expliquen cómo. <br>
+  Normalmente, van de la siguiente manera:
+  <div class="ejcss animateme scrollme" data-when="span" data-from="0.5" data-to="0" data-crop="false" data-translatex="-400" style="opacity: 1; transform: translate3d(-140px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+  <p class="ej2" style="text-align:center">
+    <<span style="color:#bf1616">script</span> src="script.js"> <<span style="color:#bf1616">/script</span>><br>
+    <<span style="color:#bf1616">script</span> href="linkdelscript.com"> <<span style="color:#bf1616">/script</span>>
+  </p>
+  </div>
+  ¡Enhorabuena! Acabas de incrustar JAVAscript en tu página HTML. Ahora queda el proceso de
+  animación, que no podré explicar debido a que cáda script tiene sus maneras, aunque, a rasgos generales,
+  <span style="color:#c98715">consisten en aplicarle comandos a los apartados HTML como son los div, los h2, los p...</span>
+
+              <!--Cuerpo 2: Plugins-->
+
+    <h1 style="border: 0; margin-top: 0; color: #4420bd">Plugins para JAVAscript</h1>
+    <p>¡Vaya! De verdad te interesa mucho cómo crear páginas interactivas y animadas, ¿verdad?. <br>
+    Este último apartado no será un tutorial, será el conjunto de plugins que he usado para crear mi proyecto.
+    <br>...<br>
+      ...<br>
+      ...<br>
+    Entonces... ¿dónde están? <br>
+    Aquí es donde TÚ entras en juego. Los plugins y scripts de esta página están a tu disposición. ¡Solo tienes que
+    buscarlos! ¿Dónde? Ese no es mi problema. ¡Ánimo!
+  </p>
+  <br>
+  <div class="ejcss animateme scrollme" data-when="span" data-from="0.5" data-to="0" data-crop="false" data-translatey="350" style="opacity: 1; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+  <p class="ej2">
+    ¡Sé aventurero! Adéntrate en los confines más recónditos de esta página y
+    consigue averiguar cómo la hice!
+  </p>
+  </div>
+  </section>
+
+          <!--Cuerpo 3: Pie de página-->
+
+<footer class="ppag">
+  <img src="img/logo.jpeg"  class="micareto animateme scrollme" data-when="span" data-from="1.1" data-to="0" data-crop="false" data-opacity="0" data-scale="0.2">
+  <h2>Agradecimientos</h2>
+  <div class="fn animateme scrollme" data-when="span" data-from="0.5" data-to="0" data-crop="false" data-translatex="400" style="opacity: 1; transform: translate3d(-140px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+    Agradecimientos a la página <a class="matelink" href="https://www.marciniak.org.pl/" target="_blank">"Mateusz Marciniak"</a> por inspirarme a realizar un diseño
+    similiar al de mi página web. <br>
+    Igualmente, me gustaría agradecer a Andrés el de mi clase de TIC, que es una máquina en
+    esto del coding. <br>
+    Por último, gracias a la materia de TIC y al profesor Ángel Acción Lamas por introducirnos
+    a todos a este mundillo.<br>
+  </div>
+    <div class="Copyright">
+      IES Eduardo Blanco Amor 2019
+      © Copyright
+      Marca registrada
+    </div>
+    <div class="minilogo">
+          <img src="2.png" alt="logo" class="ml">
+    </div>
+</footer>
+
+
+
+    <!--¡Felicidades! ¡Lo conseguiste!-->
+      <!--Scripts: Scrollme, parallax-->
+
+  <script src="js/scroll.js"></script>
+  <script src="js/jquery.scrollme.js"></script>
+  <script src="js/parallax.js"></script>
+
+        <!--Scripts: Parallax-->
+  <script type="text/javascript">
+  	$(document).ready(function() {
+  		$('header').parallax({
+  			imageSrc: 'img/1.jpg'
+  		});
+  	});
+  </script>
+
+        <!--Scripts: AOS-->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+        AOS.init({
+          easing: 'ease-out-back',
+          duration: 500
+        });
+</script>
+
+      <!--Scripts: Flechas FadeOut-->
+
+<script>
+
+        $(window).scroll(function() {
+
+    if ($(this).scrollTop()>0)
+     {
+        $('.arrows').fadeOut();
+     }
+    else
+     {
+      $('.arrows').fadeIn();
+     }
+ });
+</script>
+
+          <!--Scripts: Botón-->
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 770 || document.documentElement.scrollTop > 770) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}</script>
+
+        <!--Fin-->
+
+</html>
